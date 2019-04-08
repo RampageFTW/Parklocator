@@ -40,3 +40,8 @@ li, img {
 .hidden {
   display: none;
 }
+
+span {
+  font-weight: 700;
+  display: block;
+}

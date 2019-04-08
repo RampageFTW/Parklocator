@@ -44,7 +44,7 @@ function displayResults(jsonInput) {
     console.log(jsonInput.data[i].name);
     console.log(jsonInput.data[i].url);
     console.log(jsonInput.data[i].description);
-    htmlOutput += `<li><a href="${jsonInput.data[i].url}">${jsonInput.data[i].name}</a><br>${jsonInput.data[i].description} <br><br> ${jsonInput.data[i].directionsInfo}</li>`;
+    htmlOutput += `<li><a href="${jsonInput.data[i].url}">${jsonInput.data[i].name}</a><br>${jsonInput.data[i].description} <br><br> <span>Address</span>${jsonInput.data[i].directionsInfo}</li>`;
   }
   $('#results').removeClass('hidden')
   $("#results-list").html(htmlOutput)
