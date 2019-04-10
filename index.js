@@ -5,7 +5,7 @@ const api_key = 'odFc4yhVfVwzBbZffLGNC59T6ZYljEjzYLKaFZsS';
 
 function getParks(query, maxResults=10) {
   let queryOutput = "api_key=" + api_key + "&maxResults=" + maxResults;
-  console.log(query);
+  // console.log(query);
   //if there are no commas add one state code
   if (query.indexOf(",") < 0) {
     queryOutput += "&stateCode=" + $.trim(query);
@@ -26,7 +26,7 @@ function getParks(query, maxResults=10) {
   const searchURL = `https://developer.nps.gov/api/v1/parks`;
   const url = searchURL + '?' + queryOutput;
 
-  console.log(url);
+  // console.log(url);
 
   fetch(url)
     .then(response => {
