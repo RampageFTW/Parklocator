@@ -45,3 +45,7 @@ span {
   font-weight: 700;
   display: block;
 }
+
+#js-state {
+  width: 100%;
+}
